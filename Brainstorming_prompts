@@ -1,0 +1,21 @@
+Sequence of prompts used to brainstorm the final set of topics and rubric to analyse an open-ended survey question with ChatGPT-5.2:
+
+Prompt 1:
+Given these [numOfTopics] topics’ descriptions in Indonesian, can we merge or split some topics so the resulting topics are more distinct? Or are they already distinct enough? These topics were obtained by grouping respondents’ Indonesian responses to the question “[surveyQuestion]”.
+
+Prompt 2:
+Merge/split to [finalNumOfTopics] topics and rewrite the topic titles with codes (T1–T[finalNumOfTopics]) and 1–2 sentences of operational definition plus inclusion/exclusion criteria for each topic, so they’re consistent and truly non-overlapping.
+
+Prompt 3:
+Add priority rules and enforce “one response → one dominant topic”.
+
+Prompt 4:
+Make this into a rubric that a language model can easily apply to code a response into one of the topics.
+
+Prompt 5:
+Convert this into a compact labeling prompt (system-style instructions + label definitions) that you can paste directly into an LLM coder workflow.
+
+Where:
+numOfTopics: number of topics extracted via LDA topic modeling based on the number of topics (between 2-10) with the highest c_v coherence scores
+surveyQuestion: the open-ended survey question being analysed
+finalNumOfTopics: the final number of topics decided manually, based on ChatGPT-5.2's suggestion of topic merging or splitting
