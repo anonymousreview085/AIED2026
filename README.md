@@ -4,3 +4,4 @@ This repository contains supplementary materials for a submission to AIED 2026:
 - Generated rubrics for open-ended questions
 - Survey instruments (in English (EN) and Indonesian (ID))
 - Sociodemographic characteristics of survey participants
+- AILiteracyAgreement.xlsx comparing gpt-assigned-codes and human-assigned-labels using the same rubric on 10% sample of the data across the open-ended questions
